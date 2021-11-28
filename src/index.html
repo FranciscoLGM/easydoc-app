@@ -14,9 +14,32 @@
 
 <body>
   <app-root></app-root>
-  <app-nav></app-nav>
-  <router-outlet></router-outlet>  
-  <app-footer></app-footer>
+
+  <!-- Inicio Botones de navegación-->
+
+ <nav class="grid__container">
+
+  <div class="nav__container">
+
+    <h1 class="nav__logo">EasyDoc</h1>
+
+    <label for="menu" class="nav__label">
+      <img src="assets/ico/menu.svg" alt="Menu" class="nav__img">
+    </label>
+    <input type="checkbox" id="menu" class="nav__input">
+
+    <div class="nav__menu">
+      <a routerLink="/" class="nav__item">Inicio</a>
+      <a routerLink="/listar-pacientes" class="nav__item">Pacientes</a>
+      <a routerLink="/contact" class="nav__item">Contacto</a>
+      <a routerLink="/" class="nav__item">Salir</a>
+    </div>
+
+  </div>
+
+
+</nav>
+<!-- Final de Botones de navegación-->
 
 
 
