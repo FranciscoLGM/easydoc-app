@@ -1,0 +1,74 @@
+/********************************/
+/*Inicio de los estilos del nav */
+/********************************/
+
+.grid__container {
+  height: 7rem;
+  color: whitesmoke;
+  background: #232526;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nav__container {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav__menu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+}
+
+.nav__item {
+  color: whitesmoke;
+  text-decoration: none;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
+
+}
+
+.nav__item::after {
+  content: '';
+  display: block;
+  background: rgb(155, 52, 239);
+  width: 90%;
+  margin-top: 0.187rem;
+  height: 0.187rem;
+  clip-path: var(--clippy);
+  transition: clip-path .5s;
+}
+
+.nav__item:hover {
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.nav__input:checked+.nav__menu {
+  background: tomato;
+}
+
+.nav__label,
+.nav__input {
+  display: none;
+}
+
+.nav__indexMenu {
+  margin-right: 4rem;
+}
+
+/*****************************/
+/*Fin de los estilos del nav */
+/*****************************/

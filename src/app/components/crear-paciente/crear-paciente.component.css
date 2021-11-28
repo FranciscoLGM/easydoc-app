@@ -1,0 +1,8 @@
+.text-danger{
+    text-align: center;
+    margin-left: .5rem;
+    margin-top: -1rem;
+    margin-bottom: .5rem;
+    font-style: italic;
+    font-size: .9rem;
+}

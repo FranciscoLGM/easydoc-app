@@ -1,0 +1,76 @@
+/***********************************/
+/*Inicio de los estilos del Footer */
+/***********************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-height: calc(100vh - 27rem);   
+}
+
+.footer {
+  height: 10rem;
+  background-color: #e2e2e2; 
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: 1140px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  color: whitesmoke;
+  padding: .5rem 0;
+  background: #232526;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.textos-footer {
+  grid-column: 1/-1;
+  margin-bottom: 1.5rem;
+  margin-top: .5rem;
+}
+
+[class^="footer-item"] a {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  transition: all ease-in-out 250ms;
+}
+
+[class^="footer-item"] a:hover {
+  color: rgb(155, 52, 239);
+}
+
+[class^="footer-item"] {
+  color: whitesmoke;
+  grid-column: span 3;
+}
+
+footer p {
+  grid-column: 1/-1;
+  margin-top: 1.5rem;
+  font-size: .9rem;
+}
+
+/********************************/
+/*Fin de los estilos del Footer */
+/********************************/
