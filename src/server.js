@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/app/components/home'));  
+app.use(express.static(__dirname + '/scr/app/components/home'));  // assets/ico/menu.svg
 
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname + '/home.component.html'));
