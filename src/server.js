@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static(__dirname + '/src/app/components/home'));  // src/app/components/home/home.component.html
 
 app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname + '/src/app/components/home/home.component.html'));
+  res.sendFile(path.join(__dirname + '/src/app/components/home/home.html'));
 });
 
 // Start the app by listening on the default Heroku port
