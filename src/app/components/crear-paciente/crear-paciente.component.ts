@@ -46,7 +46,7 @@ export class CrearPacienteComponent implements OnInit {
     if (this.id != null) {
       // editar paciente
       this._pacienteService.editarPaciente(this.id, paciente).subscribe(data => {
-        this.toastr.info('Paciente editado correctamente', '¡Éxito!');
+        this.toastr.info('Paciente editado exitosamente', '¡Éxito!');
         this.router.navigate(['/listar-pacientes']);
       }, error => {
         this.toastr.error('Error al editar paciente', '¡Error!');
